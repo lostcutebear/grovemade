@@ -1,3 +1,18 @@
+%style-1 {
+    font-weight: 400;
+    color: #ffffff;
+}
+
+%style-2 {
+    font-weight: 400;
+    color: #000000;
+}
+
+%flex {
+    display: flex;
+    align-items: center;
+}
+
 $primary: 'Roboto', sans-serif;
 
 html {
@@ -9,6 +24,10 @@ html {
 *:before,
 *:after {
     box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
 }
 
 body,
@@ -34,4 +53,281 @@ ul {
 img {
     max-width: 100%;
     height: auto;
+}
+
+body {
+    background-color: #fff;
+    font-family: $primary;
+    font-weight: 400;
+}
+
+.header {
+    &__container {
+        @extend %flex;
+        justify-content: space-between;
+        padding: 30px 80px 30px 50px;
+    }
+
+    &__nav-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+    }
+
+    &__nav-list-link, &__my-cart-link {
+        @extend %style-2;
+        font-size: 13px;
+        line-height: 15.23px;
+        letter-spacing: 1.4px;
+        text-transform: uppercase;
+    }
+}
+
+.main {
+    &__img-wrapper {
+        position: relative;
+        & img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__text-wrapper {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__title, &__text, &__learn-more, &__learn-more a {
+        @extend %style-1;
+        text-align: center;
+    }
+
+    &__title {
+        margin-top: -75px;
+        margin-bottom: 12px;
+        font-size: 43px;
+        line-height: 46px;
+    }
+
+    &__text {
+        margin-bottom: 28px;
+        font-size: 15px;
+        line-height: 17.58px;
+        letter-spacing: 0.8px;
+    }
+
+    &__info {
+        font-size: 13px;
+        line-height: 15.23px;
+        letter-spacing: 1.4px;
+    }
+
+    &__description {
+        margin-top: 80px;
+        text-align: center;
+    }
+
+    &__description-title {
+        margin-bottom: 23px; 
+        font-size: 43px;
+        line-height: 58px;
+        @extend %style-2;
+    }
+
+    &__description-text {
+        margin-bottom: 26px;
+        color: #a0a0a0;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.8px;
+    }
+
+    &__description-link {
+        @extend %style-2;
+        font-size: 13px;
+        line-height: 21px;
+        letter-spacing: 1.4px;
+    }
+
+    &__desks-wrapper {
+        @extend %flex;
+        justify-content: space-between;
+        padding: 81px 50px 130px;
+        gap: 25px;
+    }
+
+    &__desks-text-wrapper, &__laptop-text-wrapper {
+        margin-top: 48px;
+        text-align: center;
+    }
+
+    &__desks-name {
+        @extend %style-2;
+        margin-bottom: 23px;
+        font-size: 27px;
+        line-height: 30px;
+    }
+
+    &__desks-info {
+        @extend %style-2;
+        font-size: 13px;
+        line-height: 15.23px;
+        letter-spacing: 1.4px;
+    }
+
+    &__items {
+        @extend %flex;
+        justify-content: space-between;
+        padding: 24px 63px 95px;
+        gap: 25px;
+    }
+
+    &__item {
+        & img {
+            margin-bottom: 23px;
+        }
+    }
+
+
+    &__item-name {
+        @extend %style-2;
+        color: #a0a0a0;
+        font-size: 13px;
+        letter-spacing: 0.7px;
+        line-height: 21px;
+    }
+    
+    &__item-price {
+        @extend %style-2;
+        font-size: 12px;
+        color: #a0a0a0;
+        line-height: 21px;
+        letter-spacing: 0.7px;
+    }
+    
+    &__products-title, &__products-desc {
+        text-align: center;
+    }
+
+    &__products-title {
+        @extend %style-2;
+        margin-bottom: 16px;
+        font-size: 33px;
+        line-height: 36px;
+    }
+
+    &__products-desc {
+        @extend %style-2;
+        margin-bottom: 52px;
+        color: #a0a0a0;
+        font-size: 15px;
+        letter-spacing: 0.8px;
+        line-height: 17.58px;
+    }
+
+    &__products-squares-wrapper {
+        @extend %flex;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    &__products-square {
+        width: 7px;
+        height: 7px;
+        background-color: #000000;
+    }
+
+    &__inspiration {
+        margin-bottom: 116px;
+    }
+
+    &__inspiration-img-wrapper {
+        position: relative;
+        & img {
+            width: 100%;
+            height: auto;
+        }
+
+    }
+    &__inspiration-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: -52px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    &__inspiration-title {
+        @extend %style-1;
+        margin-bottom: 14px;
+        font-size: 66px;
+        line-height: 70px;
+    }
+
+    &__inspiration-desc {
+        @extend %style-1;
+        margin-bottom: 30px;
+        font-size: 14px;
+        line-height: 16.41px;
+        letter-spacing: 0.8px;
+    }
+
+    &__inspiration-link {
+        @extend %style-1;
+        font-size: 13px;
+        line-height: 15.23px;
+        letter-spacing: 1.4px;
+    }
+
+    &__innovation-text-wrapper, &__team-text {
+        text-align: center;
+    }
+
+    &__innovation-title, &__team-title {
+        @extend %style-2;
+        margin-bottom: 23px;
+        line-height: 36px;
+        font-size: 34px;
+    }
+
+    &__innovation-text, &__team-desc {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.8px;
+        max-width: 777px;
+        color: #a0a0a0;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 23px;
+    }
+
+    &__innovation-img {
+        display: block;
+        max-width: 1052px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 38px;
+    }
+
+    &__team {
+        margin-bottom: 124px;
+    }
+
+    &__team-desc {
+        margin-bottom: 79px;
+    }
+
+    &__team-members {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1;
+        padding: 0 50px;
+        gap: 24px;
+    }
+
 }
