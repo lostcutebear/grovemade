@@ -330,4 +330,55 @@ body {
         gap: 24px;
     }
 
+    &__story-text {
+        text-align: center;
+        margin-bottom: 121px;
+    }
+
+    &__story-title {
+        @extend %style-2;
+        margin-bottom: 44px;
+        font-size: 34px;
+        line-height: 36px;
+    }
+
+    &__story-link {
+        @extend %style-2;
+        font-size: 13px;
+        line-height: 21px;
+        letter-spacing: 1.4px;
+    }
+
+    &__inspires-container {
+        padding: 0 50px;
+        position: relative;
+        & img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__inspires-text-wrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -32px;
+        transform: translateX(-50%);
+    }
+
+    &__inspires-title {
+        @extend %style-1;
+        margin-bottom: 23px;
+        font-size: 43px;
+        line-height: 58px;
+        text-align: center;
+    }
+
+    &__inspires-text {
+        @extend %style-1;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.8px;
+    }
 }

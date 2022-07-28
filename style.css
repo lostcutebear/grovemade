@@ -1,9 +1,9 @@
-.main__inspiration-link, .main__inspiration-desc, .main__inspiration-title, .main__title, .main__text, .main__learn-more, .main__learn-more a {
+.main__inspires-text, .main__inspires-title, .main__inspiration-link, .main__inspiration-desc, .main__inspiration-title, .main__title, .main__text, .main__learn-more, .main__learn-more a {
   font-weight: 400;
   color: #ffffff;
 }
 
-.main__innovation-title, .main__team-title, .main__products-desc, .main__products-title, .main__item-price, .main__item-name, .main__desks-info, .main__desks-name, .main__description-link, .main__description-title, .header__nav-list-link, .header__my-cart-link {
+.main__story-link, .main__story-title, .main__innovation-title, .main__team-title, .main__products-desc, .main__products-title, .main__item-price, .main__item-name, .main__desks-info, .main__desks-name, .main__description-link, .main__description-title, .header__nav-list-link, .header__my-cart-link {
   font-weight: 400;
   color: #000000;
 }
@@ -265,4 +265,45 @@ body {
   flex: 1;
   padding: 0 50px;
   gap: 24px;
+}
+.main__story-text {
+  text-align: center;
+  margin-bottom: 121px;
+}
+.main__story-title {
+  margin-bottom: 44px;
+  font-size: 34px;
+  line-height: 36px;
+}
+.main__story-link {
+  font-size: 13px;
+  line-height: 21px;
+  letter-spacing: 1.4px;
+}
+.main__inspires-container {
+  padding: 0 50px;
+  position: relative;
+}
+.main__inspires-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.main__inspires-text-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -32px;
+  transform: translateX(-50%);
+}
+.main__inspires-title {
+  margin-bottom: 23px;
+  font-size: 43px;
+  line-height: 58px;
+  text-align: center;
+}
+.main__inspires-text {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.8px;
 }/*# sourceMappingURL=style.css.map */
