@@ -56,7 +56,7 @@ img {
 }
 
 body {
-    background-color: #fff;
+    background-color: #e5e5e5;
     font-family: $primary;
     font-weight: 400;
 }
@@ -349,6 +349,10 @@ body {
         letter-spacing: 1.4px;
     }
 
+    &__inspires {
+        margin-bottom: 39px;
+    }
+
     &__inspires-container {
         padding: 0 50px;
         position: relative;
@@ -380,5 +384,99 @@ body {
         font-size: 14px;
         line-height: 24px;
         letter-spacing: 0.8px;
+    }
+}
+
+.footer {
+    &__container {
+        background: #f9f9f9;
+        padding: 77px 50px 28px;
+    }
+
+    &__nav-wrapper {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    &__nav-list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        a {
+            @extend %style-2;
+            font-size: 22px;
+            line-height: 24px;
+        }
+    }
+
+    &__navbar {
+        display: flex;
+        gap: 123px;
+        flex: 1;
+    }
+
+    &__logo {
+        margin-top: -77px;
+        width: 82px;
+        height: 82px;
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        font-size: 15px;
+        letter-spacing: 0.8px;
+        line-height: 82px;
+    }
+
+    &__nav-title {
+        margin-bottom: 23px;
+        font-size: 22px;
+        line-height: 24px;
+        @extend %style-2;
+    }
+
+    &__form-wrapper {
+        margin-bottom: 144.55px;
+        & form {
+            & input {
+                border: none;
+                outline: none;
+                border-bottom: 1px solid #000;
+                width: 320px;
+                color: #000;
+                @extend %style-2;
+                letter-spacing: 0.8px;
+            }
+        }
+    }
+
+    &__nav-desc {
+        margin-bottom: 91px;
+        font-size: 14px;
+        line-height: 16.41px;
+        letter-spacing: 0.8px;
+        color: #a0a0a0;
+        width: 348px;
+    }
+
+    &__grovemade-info {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 37px;
+
+        & a, & p:nth-child(1), & p:nth-child(4) {
+            font-size: 13px;
+            line-height: 15.23px;
+            letter-spacing: 0.8px;
+        }
+        
+        & a, & p:nth-child(1) {
+            color: #707A7F;
+        }
+        
+        & p:nth-child(4) {
+            color: #000;
+        }
     }
 }

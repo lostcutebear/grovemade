@@ -3,7 +3,7 @@
   color: #ffffff;
 }
 
-.main__story-link, .main__story-title, .main__innovation-title, .main__team-title, .main__products-desc, .main__products-title, .main__item-price, .main__item-name, .main__desks-info, .main__desks-name, .main__description-link, .main__description-title, .header__nav-list-link, .header__my-cart-link {
+.footer__form-wrapper form input, .footer__nav-title, .footer__nav-list a, .main__story-link, .main__story-title, .main__innovation-title, .main__team-title, .main__products-desc, .main__products-title, .main__item-price, .main__item-name, .main__desks-info, .main__desks-name, .main__description-link, .main__description-title, .header__nav-list-link, .header__my-cart-link {
   font-weight: 400;
   color: #000000;
 }
@@ -54,7 +54,7 @@ img {
 }
 
 body {
-  background-color: #fff;
+  background-color: #e5e5e5;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
@@ -280,6 +280,9 @@ body {
   line-height: 21px;
   letter-spacing: 1.4px;
 }
+.main__inspires {
+  margin-bottom: 39px;
+}
 .main__inspires-container {
   padding: 0 50px;
   position: relative;
@@ -306,4 +309,80 @@ body {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.8px;
+}
+
+.footer__container {
+  background: #f9f9f9;
+  padding: 77px 50px 28px;
+}
+.footer__nav-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.footer__nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer__nav-list a {
+  font-size: 22px;
+  line-height: 24px;
+}
+.footer__navbar {
+  display: flex;
+  gap: 123px;
+  flex: 1;
+}
+.footer__logo {
+  margin-top: -77px;
+  width: 82px;
+  height: 82px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 0.8px;
+  line-height: 82px;
+}
+.footer__nav-title {
+  margin-bottom: 23px;
+  font-size: 22px;
+  line-height: 24px;
+}
+.footer__form-wrapper {
+  margin-bottom: 144.55px;
+}
+.footer__form-wrapper form input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #000;
+  width: 320px;
+  color: #000;
+  letter-spacing: 0.8px;
+}
+.footer__nav-desc {
+  margin-bottom: 91px;
+  font-size: 14px;
+  line-height: 16.41px;
+  letter-spacing: 0.8px;
+  color: #a0a0a0;
+  width: 348px;
+}
+.footer__grovemade-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 37px;
+}
+.footer__grovemade-info a, .footer__grovemade-info p:nth-child(1), .footer__grovemade-info p:nth-child(4) {
+  font-size: 13px;
+  line-height: 15.23px;
+  letter-spacing: 0.8px;
+}
+.footer__grovemade-info a, .footer__grovemade-info p:nth-child(1) {
+  color: #707A7F;
+}
+.footer__grovemade-info p:nth-child(4) {
+  color: #000;
 }/*# sourceMappingURL=style.css.map */
