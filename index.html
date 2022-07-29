@@ -229,36 +229,57 @@
         </div>
     </main>
 
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Journal</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="#">COVID-19 Info</a></li>
-                <li><a href="#">Order Status</a></li>
-                <li><a href="#">Corporate Sales</a></li>
-            </ul>
-        </nav>
-        <h4>Newsletter Signup</h4>
-        <p>Sign up to our Newsletter to hear about new product releases, learn about our design process, and everything else going on behind the scenes at Grovemade.</p>
-        <form action="" method="get">
-            <input type="text" id="signup" name="signup">
-        </form>
-        <div>
-            <p>GO</p>
-            <p>UP</p>
-        </div>
-        <div>
-            &copy;2022 Grovemade
-            <a href="#">Terms & Conditions</a>
-            <a href="#">Privacy Policy</a>
-            <p>Site by Deparment</p>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__nav-wrapper">
+                <div class="footer__navbar">
+                    <nav class="footer__nav">
+                        <ul class="footer__nav-list">
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Journal</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">COVID-19 Info</a></li>
+                            <li><a href="#">Order Status</a></li>
+                            <li><a href="#">Corporate Sales</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="footer__form-wrapper">
+                        <h4 class="footer__nav-title">Newsletter Signup</h4>
+                        <p class="footer__nav-desc">Sign up to our Newsletter to hear about new product releases, learn about our design process, and everything else going on behind the scenes at Grovemade.</p>
+                        <form action="#" method="get">
+                            <input type="text" id="signup" name="signup">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="footer__logo">
+                    <span>GO</span>
+                    <span>UP</span>
+                </div>
+
+            </div>
+
+            <div class="footer__grovemade-info">
+                <p class="footer__grovemade-copyright">&copy;2022 Grovemade</p>
+                <a class="footer__grovemade-terms" href="#">Terms & Conditions</a>
+                <a class="footer__grovemade-policy" href="#">Privacy Policy</a>
+                <p class="footer__grovemade-department">Site by Deparment</p>
+            </div>
         </div>
     </footer>
+
+    <script>
+        const input = document.getElementById('signup');
+        const inputHandler = (e) => e.preventDefault();
+        input.addEventListener("click", inputHandler);
+    </script>
+        
 </body>
 </html>
+
+
 
 
 
